@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class SudokuSolver {
 
     public static boolean resolverSudoku(int[][] tabuleiro) {
