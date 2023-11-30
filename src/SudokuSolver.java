@@ -26,14 +26,6 @@ public class SudokuSolver {
                 }
             }
         }
-        for (int[] x : tabuleiro)
-        {
-            for (int y : x)
-            {
-                System.out.print(y + " ");
-            }
-            System.out.println();
-        }
         return true; // Retorna true se o tabuleiro estiver completamente preenchido
     }
 
@@ -70,5 +62,16 @@ public class SudokuSolver {
             }
         }
         return false;
+    }
+
+    public static void mostrarTabuleiro(int[][] tabuleiro) {
+        for (int[] x : tabuleiro)
+        {
+            for (int y : x)
+            {
+                System.out.print(y + " ");
+            }
+            System.out.println();
+        }
     }
 }
