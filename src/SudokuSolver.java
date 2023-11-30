@@ -17,14 +17,14 @@ public class SudokuSolver {
                                 return true;
                             }
 
-                            tabuleiro[linha][coluna] = 0; // Desfaz a atribuição se a solução não for encontrada
+                            tabuleiro[linha][coluna] = 0;
                         }
                     }
-                    return false; // Se nenhum número é válido, retrocede
+                    return false;
                 }
             }
         }
-        return true; // Retorna true se o tabuleiro estiver completamente preenchido
+        return true;
     }
 
     private static boolean isNumeroSeguro(int[][] tabuleiro, int linha, int coluna, int num) {
